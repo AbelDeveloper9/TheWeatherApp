@@ -337,11 +337,9 @@ const App = () => {
           </ul>
         </div>
 
-        {!isPanelVisible && (
           <button ref={btnRef2} onClick={togglePanelVisibility} className="absolute top-0 right-0 p-6 m-0 border-none outline-none bg-orange-500 text-white cursor-pointer text-lg transition-colors duration-400 hover:text-black">
-            <i className="fas fa-plus"></i>
+            <i className="fas fa-search"></i>
           </button>          
-        )}
       </div>
     </div>
   );
