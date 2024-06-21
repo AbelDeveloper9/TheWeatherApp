@@ -1,18 +1,34 @@
+/* Se importa la fuente 'Rubik' desde Google Fonts con diferentes pesos y estilos, y se establece como la fuente principal para la página. */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Incluye las directivas de Tailwind CSS para la base, los componentes y las utilidades. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: 'Rubik', sans-serif;
-  background: #111;
-}
+/* Se aplican los estilos base de Tailwind CSS. */
+@layer base {
+  /* En la capa base, se establece la fuente principal como 'Rubik', una fuente sans-serif para el elemento 'html' */
+  html {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  /* Establece la regla de caja para incluir el padding y el border en el tamaño total del elemento. */
+  * {
+    box-sizing: border-box;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  /* Establece el estilo para el cuerpo del documento. */
+  body {
+  /* Establece el margen del cuerpo a 0 para eliminar los márgenes predeterminados del navegador. */
+    margin: 0;
+  /* Establece el color de fondo del cuerpo a un tono oscuro (#111). */
+    background: #111;
+  }
 
-h1,
-h3 {
-  font-weight: 400;
+  /* Establece el peso de la fuente de los títulos h1 y h3 a 400 (normal). */
+  h1,
+  h3 {
+    font-weight: 400;
+  }
 }
