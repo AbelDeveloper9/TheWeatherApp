@@ -73,7 +73,7 @@ const App = () => {
         throw new Error('Network response was not ok');
       }
       const data = await response.json();
-      setForecastData(data.forecast.forecastday.slice(0));
+      setForecastData(data.forecast.forecastday);
     } catch (error) {
       console.error('Error fetching weather forecast:', error);
     }
