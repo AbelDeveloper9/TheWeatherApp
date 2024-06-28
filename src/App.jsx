@@ -308,7 +308,7 @@ const App = () => {
             </li>
           </ul>
 
-          <h4>6 - Day Forecast</h4>
+          <h4>3 - Day Forecast</h4>
           <ul>
             {forecastData.map((day, index) => (
               <li key={index} className="flex justify-between items-center border border-gray-300 bg-gray-100 bg-opacity-15 p-2 my-6">
