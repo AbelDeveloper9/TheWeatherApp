@@ -253,7 +253,7 @@ const App = () => {
             {isMobile ? (
               <div className='mx-4 text-center md:text-left'>
                 <div className="flex flex-col items-center md:flex-row md:items-start justify-center">
-                  <img src={`http:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
+                  <img src={`https:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
                   <span className="text-lg">{weatherData?.current?.condition?.text}</span>
                 </div>
               </div>
@@ -262,7 +262,7 @@ const App = () => {
 
               <div className='mx-4 text-center md:text-left'>
                 <div className="flex md:flex-col">
-                  <img src={`http:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
+                  <img src={`https:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
                   <span className="text-lg m-1">{weatherData?.current?.condition?.text}</span>
                 </div>
               </div>
@@ -327,7 +327,7 @@ const App = () => {
                 </div>
                 <div className="flex-1 flex justify-center items-center">
                   <div className="text-center">
-                    <img src={`http:${day.day?.condition?.icon}`} className="mx-auto h-12 w-12" alt="icon" />
+                    <img src={`https:${day.day?.condition?.icon}`} className="mx-auto h-12 w-12" alt="icon" />
                     <p className="mt-1 text-sm">{day.day?.condition?.text}</p>
                   </div>
                 </div>
