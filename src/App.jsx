@@ -253,7 +253,7 @@ const App = () => {
             {isMobile ? (
               <div className='mx-4 text-center md:text-left'>
                 <div className="flex flex-col items-center md:flex-row md:items-start justify-center">
-                  <img src={`https:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
+                  <img src={`http:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
                   <span className="text-lg">{weatherData?.current?.condition?.text}</span>
                 </div>
               </div>
@@ -262,7 +262,7 @@ const App = () => {
 
               <div className='mx-4 text-center md:text-left'>
                 <div className="flex md:flex-col">
-                  <img src={`https:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
+                  <img src={`http:${weatherData?.current?.condition?.icon}`} className='block mx-0 w-10 h-10' alt="icon" width="50" height="50" />
                   <span className="text-lg m-1">{weatherData?.current?.condition?.text}</span>
                 </div>
               </div>
